@@ -22,6 +22,9 @@ class DashboardController extends Controller
     {
         $user = \Illuminate\Support\Facades\Auth::user();
         $menu = \App\Menu::getMenu($user->tipo);
+        
+        print_r( $menu[0]['titulo']);
+        print_r( $menu[0]['class']);
         return view('admin.dashboard', compact('user'));
     }
 
