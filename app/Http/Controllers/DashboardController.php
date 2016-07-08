@@ -19,21 +19,8 @@ class DashboardController extends Controller {
      */
     public function index() {
         $user = \Illuminate\Support\Facades\Auth::user();
-<<<<<<< HEAD
-        $menu = \App\Menu::getMenu($user->tipo);
-        
-        print_r( $menu[0]['titulo']);
-        print_r( $menu[0]['class']);
-        return view('admin.dashboard', compact('user'));
-=======
-        
-        
-        
-        $perfil = \App\Perfil::where('perfil', $user->tipo)->get();
-        $menus = \App\Menu::whereIn('sub_seccion',[$perfil->acceso_menu])->get();
-
-        return view('admin.dashboard', compact('user', 'perfil', 'menus'));
->>>>>>> e1b835d3cc69de0a85dbf2acf083602648e5e282
+        $menus = \App\Menu::getMenus($user->tipo);      
+        return view('admin.dashboard', compact('user', 'menus'));
     }
 
     /**
