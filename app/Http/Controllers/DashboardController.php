@@ -19,7 +19,7 @@ class DashboardController extends Controller {
      */
     public function index() {
         $user = \Illuminate\Support\Facades\Auth::user();
-        $menus = \App\Menu::getMenus($user->tipo);      
+        $menus = \App\Menu::getMenus($user->tipo);
         return view('admin.dashboard', compact('user', 'menus'));
     }
 

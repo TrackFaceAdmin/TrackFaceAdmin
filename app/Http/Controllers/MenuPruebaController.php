@@ -76,6 +76,11 @@ class MenuPruebaController extends Controller {
     public function destroy($id) {
         //
     }
- 
+
+    public function menu() {
+        $user = \Illuminate\Support\Facades\Auth::user();
+        $menus = \App\Menu::getMenus($user->tipo);
+        return view('admin.pruebamenu', compact('user', 'menus'));
+    }
 
 }
