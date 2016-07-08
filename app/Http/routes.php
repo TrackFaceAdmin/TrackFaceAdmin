@@ -13,6 +13,7 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('dashboard', 'DashboardController@index');
+Route::get('prueba/menu', 'MenuPruebaController@menu');
 
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
