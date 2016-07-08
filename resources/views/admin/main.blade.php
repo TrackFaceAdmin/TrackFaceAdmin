@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>@yield('title')</title>
-        
+
         <!-- Global stylesheets -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">-->
         <link href="{{asset('plugin/limitless/assets/css/icons/icomoon/styles.css')}}" rel="stylesheet" type="text/css">
         <link href="{{asset('plugin/limitless/assets/css/minified/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
         <link href="{{asset('plugin/limitless/assets/css/minified/core.min.css')}}" rel="stylesheet" type="text/css">
@@ -151,7 +151,7 @@
                 <!-- Main content -->
                 <div class="content-wrapper">
                     <!-- Page header -->
-                    <div class="page-header">         
+                    <div class="page-header">
                         <div class="breadcrumb-line">
                             <ul class="breadcrumb">
                                 <li><a href="{{url('/dashboard')}}"><i class="icon-home2 position-left"></i> Home</a></li>
@@ -178,7 +178,7 @@
                     </div>
                     <!-- /page header -->
                     <!-- Content area -->
-                    <div class="content">                   
+                    <div class="content">
                         @yield('content')
                         <!-- Footer -->
                         <div class="footer text-muted">

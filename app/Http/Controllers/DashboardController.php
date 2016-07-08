@@ -21,6 +21,7 @@ class DashboardController extends Controller
     public function index()
     {
         $user = \Illuminate\Support\Facades\Auth::user();
+        $menu = \App\Menu::getMenu($user->tipo);
         return view('admin.dashboard', compact('user'));
     }
 
