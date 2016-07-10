@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>TrackFace</title>
         <!-- Global stylesheets -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+        <link href="{{asset('plugin/limitless/assets/css/fonts.css')}}" rel="stylesheet" type="text/css">
         <link href="{{ asset('plugin/limitless/assets/css/icons/icomoon/styles.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ asset('plugin/limitless/assets/css/minified/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ asset('plugin/limitless/assets/css/minified/core.min.css') }}" rel="stylesheet" type="text/css">
@@ -62,7 +62,7 @@
                 <div class="content-wrapper">
                     <!-- Content area -->
                     <div class="content">
-                        <!-- Simple login form -->                            
+                        <!-- Simple login form -->
                         <form method="POST" action="/auth/login">
                             {!! csrf_field() !!}
                             <div class="panel panel-body login-form">

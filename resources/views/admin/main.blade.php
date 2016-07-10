@@ -7,7 +7,7 @@
         <title>@yield('title')</title>
 
         <!-- Global stylesheets -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+        <link href="{{asset('plugin/limitless/assets/css/fonts.css')}}" rel="stylesheet" type="text/css">
         <link href="{{asset('plugin/limitless/assets/css/icons/icomoon/styles.css')}}" rel="stylesheet" type="text/css">
         <link href="{{asset('plugin/limitless/assets/css/minified/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
         <link href="{{asset('plugin/limitless/assets/css/minified/core.min.css')}}" rel="stylesheet" type="text/css">
@@ -155,7 +155,7 @@
                         <div class="breadcrumb-line">
                             <ul class="breadcrumb">
                                 <li><a href="{{url('/dashboard')}}"><i class="icon-home2 position-left"></i> Home</a></li>
-                                <li class="active">Dashboard</li>
+                                <li class="active">@yield('section')</li>
                             </ul>
                             <ul class="breadcrumb-elements">
                                 <li><a href="#"><i class="icon-comment-discussion position-left"></i> Support</a></li>
